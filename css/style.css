@@ -20,25 +20,30 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 400px; /* altura del header */
+  height: 350px; /* ajustamos altura total */
   padding: 0 60px;
 }
 
 /* Texto principal */
+.title-container {
+  flex: 1; /* ocupa todo el espacio libre a la izquierda */
+}
+
 .site-title {
   display: flex;
   flex-direction: column;
   line-height: 0.9;
+  margin: 0;
 }
 
 .lex {
-  font-size: 120px; /* tamaño grande para “Lex” */
+  font-size: 140px; /* más grande y dominante */
   font-weight: 700;
   text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
 }
 
 .corporativa {
-  font-size: 40px; /* más pequeño */
+  font-size: 45px;
   font-weight: 400;
   margin-left: 10px;
 }
@@ -46,11 +51,15 @@ body {
 /* Imagen de la estatua */
 .image-container {
   flex-shrink: 0;
+  display: flex;
+  align-items: flex-end;
 }
 
 .statue {
-  height: 400px; /* igual al alto del header */
+  height: 350px; /* mismo alto que el header */
+  width: auto;
   object-fit: contain;
+  transform: scale(0.85); /* encoge aprox. 3 cm visuales */
 }
 
 /* -------------------- NAVEGACIÓN -------------------- */
