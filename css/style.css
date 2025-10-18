@@ -1,4 +1,8 @@
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 /* --- variables --- */
 :root {
@@ -13,28 +17,76 @@ body {
   color: var(--cream);
 }
 
-/* --- header: fondo temporal (sin imagen) --- */
+/* --- HEADER PRINCIPAL --- */
 .main-header {
-  padding: 30px 40px;
+  background: url('../images/fondo.jpg') no-repeat center center/cover;
+  display: flex;
+  flex-direction: column;
 }
 
-/* contenedor horizontal */
+/* --- CONTENIDO SUPERIOR (título + imagen) --- */
 .header-content {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 40px 60px;
+  min-height: 500px; /* altura inicial aproximada, ajustaremos con la imagen */
 }
 
-/* título (ocupando 75% del ancho) */
-.title-container { width: 75%; text-align: left; }
+/* contenedor del título */
+.title-container {
+  flex: 1;
+  text-align: left;
+  padding-right: 40px;
+}
 
-/* imagen estatua (25%) */
-.image-container { width: 25%; text-align: right; }
+/* estilos del título */
+.site-title .lex {
+  font-size: 7rem; /* grande */
+  display: block;
+  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+  letter-spacing: 2px;
+}
 
-/* tamaños de prueba */
-.site-title .lex { font-size: 4rem; display: block; }
-.site-title .corporativa { font-size: 1.6rem; display: block; margin-top: 6px; }
+.site-title .corporativa {
+  font-size: 2rem;
+  display: block;
+  margin-top: 12px;
+  opacity: 0.85;
+}
 
-/* nav barra oscura */
-.main-nav ul { list-style: none; display:flex; justify-content:center; gap:40px; margin-top:18px; padding:12px 0; background:#000; }
+/* contenedor de la imagen */
+.image-container {
+  width: auto;
+  flex-shrink: 0;
+}
+
+.statue {
+  height: 500px; /* controla el alto total del header */
+  width: auto;
+  object-fit: contain;
+}
+
+/* --- NAV BAR --- */
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  padding: 16px 0;
+  background-color: var(--bg-dark);
+}
+
+.main-nav a {
+  color: var(--cream);
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.3rem;
+  transition: color 0.3s;
+}
+
+.main-nav a:hover {
+  color: #fff;
+}
+px; padding:12px 0; background:#000; }
 .main-nav a { color:var(--cream); text-decoration:none; font-weight:700; }
