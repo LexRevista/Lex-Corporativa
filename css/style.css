@@ -1,92 +1,82 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* --- variables --- */
-:root {
-  --bg-dark: #0D0D0F;
-  --cream: #EBE6C4;
-}
-
-/* --- cuerpo --- */
+/* -------------------- GENERAL -------------------- */
 body {
+  margin: 0;
   font-family: 'Cinzel', serif;
-  background: var(--bg-dark);
-  color: var(--cream);
+  color: #EBE6C4;
+  background-color: #0D0D0F;
 }
 
-/* --- HEADER PRINCIPAL --- */
+/* -------------------- HEADER -------------------- */
 .main-header {
-  background: url('../images/fondo.jpg') no-repeat center center/cover;
+  background-image: url('../images/fondo.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   flex-direction: column;
 }
 
-/* --- CONTENIDO SUPERIOR (título + imagen) --- */
+/* Contenedor del título + imagen */
 .header-content {
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 40px 60px;
-  min-height: 500px; /* altura inicial aproximada, ajustaremos con la imagen */
+  align-items: center;
+  height: 400px; /* altura del header */
+  padding: 0 60px;
 }
 
-/* contenedor del título */
-.title-container {
-  flex: 1;
-  text-align: left;
-  padding-right: 40px;
+/* Texto principal */
+.site-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
 }
 
-/* estilos del título */
-.site-title .lex {
-  font-size: 7rem; /* grande */
-  display: block;
-  text-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
-  letter-spacing: 2px;
+.lex {
+  font-size: 120px; /* tamaño grande para “Lex” */
+  font-weight: 700;
+  text-shadow: 6px 6px 15px rgba(0, 0, 0, 0.8);
 }
 
-.site-title .corporativa {
-  font-size: 2rem;
-  display: block;
-  margin-top: 12px;
-  opacity: 0.85;
+.corporativa {
+  font-size: 40px; /* más pequeño */
+  font-weight: 400;
+  margin-left: 10px;
 }
 
-/* contenedor de la imagen */
+/* Imagen de la estatua */
 .image-container {
-  width: auto;
   flex-shrink: 0;
 }
 
 .statue {
-  height: 500px; /* controla el alto total del header */
-  width: auto;
+  height: 400px; /* igual al alto del header */
   object-fit: contain;
 }
 
-/* --- NAV BAR --- */
+/* -------------------- NAVEGACIÓN -------------------- */
+.main-nav {
+  background-color: #0D0D0F;
+  text-align: center;
+  padding: 10px 0;
+}
+
 .main-nav ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
-  gap: 60px;
-  padding: 16px 0;
-  background-color: var(--bg-dark);
+  gap: 50px;
 }
 
 .main-nav a {
-  color: var(--cream);
+  color: #EBE6C4;
   text-decoration: none;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
 .main-nav a:hover {
-  color: #fff;
+  color: #ffffff;
 }
-px; padding:12px 0; background:#000; }
-.main-nav a { color:var(--cream); text-decoration:none; font-weight:700; }
