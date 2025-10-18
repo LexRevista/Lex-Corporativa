@@ -37,13 +37,13 @@ body {
 }
 
 .lex {
-  font-size: 200px; /* ajustado al nuevo alto */
+  font-size: 150px; /* ajustado al nuevo alto */
   font-weight: 700;
   text-shadow: 6px 6px 15px rgba(0, 0, 0, 0);
 }
 
 .corporativa {
-  font-size: 150px;
+  font-size: 100px;
   font-weight: 400;
   margin-left: 10px;
 }
@@ -56,7 +56,7 @@ body {
 }
 
 .statue {
-  height: 200px; /* mismo alto que el header */
+  height: 250px; /* mismo alto que el header */
   width: auto;
   object-fit: contain;
   transform: scale(0.85);
