@@ -1,57 +1,76 @@
-/* ===== ESTILOS GENERALES ===== */
-body {
-  margin: 0;
-  font-family: 'Cinzel', serif;
-  background-color: #0D0D0F;   /* Fondo oscuro */
-  color: #EBE6C4;              /* Texto claro */
-}
-
-/* ===== HEADER PRINCIPAL ===== */
+/* ===== HEADER CON FONDO ===== */
 .main-header {
-  text-align: center;
-  padding: 20px 0;
+  background-image: url('../images/fondo.jpg');  /* Fondo del header */
+  background-size: cover;
+  background-position: center;
+  color: #EBE6C4;
+  font-family: 'Cinzel', serif;
+  padding: 40px 60px;
 }
 
-/* Contenedor de los logos y el título */
-.logo-container {
+/* Contenedor principal del header */
+.header-content {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 15px;
+  justify-content: space-between;
 }
 
-.logo {
-  width: 80px;       /* Tamaño del logo */
-  height: auto;
-  border-radius: 5px;
+/* ===== TEXTO ===== */
+.title-container {
+  width: 75%;               /* Ocupa 3/4 del ancho */
+  text-align: left;
 }
 
-/* Título principal */
 .site-title {
-  font-size: 2rem;
-  color: #EBE6C4;
   margin: 0;
+  line-height: 1;
+}
+
+.lex {
+  display: block;
+  font-size: 5rem;          /* Lex grande */
+  font-weight: 700;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.7); /* Sombra */
+  color: #EBE6C4;
+}
+
+.corporativa {
+  display: block;
+  font-size: 2.5rem;        /* Más pequeño */
+  font-weight: 400;
+  margin-left: 10px;
+  color: #EBE6C4;
+}
+
+/* ===== IMAGEN DE LA ESTATUA ===== */
+.image-container {
+  width: 25%;               /* 1/4 del espacio */
+  text-align: right;
+}
+
+.statue {
+  max-width: 100%;
+  height: auto;
 }
 
 /* ===== MENÚ DE NAVEGACIÓN ===== */
 .main-nav ul {
-  list-style: none;       /* Quita los puntos de lista */
-  margin: 20px 0 0 0;
-  padding: 0;
+  list-style: none;
+  padding: 15px 0;
+  margin: 30px 0 0 0;
   display: flex;
   justify-content: center;
   gap: 40px;
   background-color: #0D0D0F;
-  padding: 15px 0;
 }
 
 .main-nav a {
-  text-decoration: none;   /* Quita subrayado */
-  color: #EBE6C4;          /* Color de texto */
+  text-decoration: none;
+  color: #EBE6C4;
   font-weight: bold;
   transition: color 0.3s ease;
 }
 
 .main-nav a:hover {
-  color: #d2cfa4;          /* Tono más claro al pasar el cursor */
+  color: #d2cfa4;
 }
